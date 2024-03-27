@@ -1,0 +1,705 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+.navbar{
+    height: 65px;
+    padding-left: 120px;
+    padding-right: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2rem;
+}
+span{
+    color: rgb(248, 54, 6);
+}
+.options{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(51, 50, 50);
+}
+a:hover{
+    color: grey;
+}
+.home:hover{
+    color: grey;
+}
+.nav-toggle{
+    display: none;
+}
+
+/* hero-section */
+
+.hero-section{
+    height:530px;
+    width: 100%;
+}
+
+.hero-img{
+    height: 100%;
+    width: 100%;
+}
+
+/* section1  */
+
+.section1{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.first{
+    font-size: 1.5rem;
+}
+.second{
+    font-size: 1.8rem;
+}
+
+/* section2 */
+
+.section2{
+    height: 230px;
+    padding-inline: 80px;
+    display: flex;
+}
+.box{
+    height: 190px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgba(255, 32, 2, 0.801);
+    color: white;
+    font-size: 2.2rem;
+}
+
+/* section3 */
+
+.section3{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.upper{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.small-font{
+    font-size: 0.9rem;
+    text-align: center; 
+    width: 450px;
+    line-height: 1.3rem;
+}
+
+/* big-image-section */
+
+.big-image-section{
+    /* height: 330px; */
+    padding-inline: 100px;
+    display: flex;
+}
+.parts{
+    width: 50%;
+}
+
+/* features-section */
+
+.features-section{
+    height: 300px;
+    padding-inline: 100px;
+    display: flex;
+    align-items: center;
+}
+.features{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+}
+.icon-space{
+    width: 30%;
+}
+.written-things{
+    margin-left: 10px;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.upper1{
+    font-size: 1.4rem;
+}
+.lower1{
+    line-height: 1.3rem;
+}
+
+/* section4 */
+
+.section4{
+    height: 320px;
+    background-color: rgba(255, 32, 2, 0.801);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.upper2{
+    color: white;
+    font-size: 1.9rem;
+}
+.lower2{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+.buttons{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+button{
+    height: 35px;
+    width: 150px;
+    border: none;
+    border-radius: 17px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+
+}
+
+/* section5 */
+
+.section5-upper{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.upper3{
+    font-size: 1.4rem;
+}
+.lower3{
+    font-size: 1.8rem;
+}
+
+/*  */
+
+.section5-lower{
+    height: 320px;
+    padding-inline: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.person-box{
+    height: 200px;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.person-img{
+    border-radius: 20%;
+    margin-bottom: 7px;
+}
+.upper4{
+    font-size:1.5rem ;
+}
+.lower4{
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.3;
+    width: 200px;
+}
+
+/* footer */
+
+/* second-last-section */
+
+.second-last-section{
+    height: 400px;
+    background-color: rgba(12, 8, 8, 0.822);
+    padding-inline: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*  */
+
+.division1{
+    height: 300px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.upper5{
+    font-size: 1.8rem;
+}
+.lower5{
+    font-size: 0.9rem;
+    line-height: 30px;
+}
+.socials{
+    display: flex;
+    gap: 10px;
+}
+.social-space{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-space:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+/*  */
+
+.division2{
+    height: 300px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.upper6{
+    font-size: 1.8rem;
+}
+.line-space{
+    height: 40px;
+    border-bottom: 1px solid white;
+}
+.line{
+    font-size: 0.9rem;
+}
+.last-line-space{
+    height: 40px;
+}
+
+/*  */
+
+.division3{
+    height: 300px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.last-box-last-line-space{
+    height: 50px;
+    border-bottom: 1px solid white;
+}
+.last-icons{
+    font-size: 1.4rem;
+}
+
+/* endline */
+
+.end-line{
+    height:60px;
+    background-color: black;
+    color: white;
+    padding-inline: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright{
+    color: rgb(121, 119, 119);
+}
+.last-options{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.last-options a{
+    font-size: 0.9rem;
+    color: rgb(121, 119, 119);
+}
+.last-options a:hover{
+    color: white;
+}
+
+
+
+/* Responsive styling starts here */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:1024px){
+
+    .options{
+        width: 70%;
+    }
+    .section2{
+        padding-inline: 60px;
+    }
+    .big-image-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-inline: 80px;
+    }
+    .parts{
+        width: 100%;
+        text-align: center;
+    }
+    .parts img{
+        width: 100%;
+    }
+    .features-section{
+        padding-inline: 80px;
+        justify-content: space-between;
+    }
+    .features{
+        width: 30%;
+    }
+    .section5-lower{
+        padding-inline: 80px;
+    }
+    .second-last-section{
+        padding-inline: 80px;
+    }
+    .end-line{
+        padding-inline: 80px;
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    .navbar{
+        width: 100%;
+    }
+    .options{
+        width: 70%;
+    }
+    .hero-section{
+        width: 100%;
+    }
+    .section2 p{
+        text-align: center;
+        padding-inline: 50px;
+    }
+    .big-image-section{
+        /* height: 700px; */
+        display: flex;
+        flex-direction: column;
+        padding-inline: 70px;
+    }
+    .features-section{
+        height: 330px;
+        padding-inline: 70px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    } 
+    .upper1{
+        font-size: 1.3rem;
+    }
+    .lower1{
+        font-size: 1.1rem;
+    }
+    .section5-lower{
+        height: 640px;
+        display: flex;
+        flex-direction:row;
+        /* flex-wrap: wrap; */
+        padding-inline: 70px;
+    }
+    .person-box{
+        width: 50%;
+    }
+    .second-last-section{
+        padding-inline: 70px;
+        display: flex;
+        padding-top: 50px;
+    }
+    .social-space{
+        height: 20px;
+        width: 20px;
+        font-size: 0.7rem;
+    }
+    .changes1{
+        font-size: 1.5rem;
+
+    }
+    .changes2{
+        font-size: 0.7rem
+    }
+    .end-line{
+        padding-inline: 70px;
+    }
+}
+
+
+@media  screen and (max-width:425px) {
+    .section2{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .small-font{
+        width: 80%;
+    }
+    .features-section{
+        height: 820px;
+        margin-top: -200px;
+        display: flex;
+        justify-content: center;
+        /* padding-left: -50px; */
+    }
+    .features{
+        height: 300px;
+        width: 100%;
+    }
+    .lower1{
+        height: 100px;
+        width: 80%;
+        text-align: center;
+    }
+    .section5-lower{
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        align-items: center;
+    }
+    .second-last-section{
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+        /* gap: 30px; */
+    }
+    .divisions{
+        width: 100%;
+
+    }
+    .end-line{
+        display: flex;
+        flex-direction: column;
+    }
+    .last-options{
+        width: 90%;
+        gap: 7px;
+    }
+    button{
+        height: 25px;
+        width: 110px;
+        border-radius: 17px;
+        font-size: 0.7rem;
+        margin-top: 10px;
+    }
+}
+
+@media screen  and (max-width:375px) {
+    .upper2{
+        text-align: center;
+    }
+    .lower2{
+        text-align: center;
+    }
+    .end-line{
+        height: 80px;
+        padding-top: 20px;
+    }
+    button{
+        height: 25px;
+        width: 110px;
+        border-radius: 17px;
+        font-size: 0.7rem;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen  and (max-width:320px){
+    .section5-lower{
+        height: 1200px;
+        margin-bottom: 20px;
+    }
+    .person-box{
+        margin-bottom: 40px;
+    }
+    .upper4{
+        text-align: center;
+    }
+    button{
+        height: 25px;
+        width: 110px;
+        border-radius: 17px;
+        font-size: 0.7rem;
+        margin-top: 10px;
+    }
+}
+
+/* Responsive styling ends here */
+
+
+/* Hambuger styling start here */
+
+/* Style the menu toggle button */
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hide initially on larger screens */
+}
+
+/* Style the navigation options */
+.options {
+    display: flex;
+    gap: 20px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#menu-toggle { opacity: 0;}
+
+/* Style the responsive menu for hamburger menu */
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show on smaller screens */
+    }
+
+    .options {
+        display: none; /* Hide options by default on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 15%;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .options a {
+        padding: 10px 0;
+    }
+
+    /* Show options when checkbox is checked (menu is open) */
+    #menu-toggle:checked + .menu-icon + .options {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* Hambuger styling ends here */
+
+
+  
+
